@@ -1,0 +1,43 @@
+/* Base styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: gray;
+  color: white;
+  text-align: center;
+  padding-top: 70px;
+}
+
+h1 {
+  display: none;
+}
+
+/* Smartphone */
+@media(max-width: 500px) {
+  body {background: coral;}
+  
+  #smartphone h1 {display: block;}
+}
+/* Tablet */
+@media(min-width: 501px) and (max-width: 786px) {
+  body {background: cadetblue;}
+  
+  #tablet h1 {display: block;}
+}
+/* Normal */
+@media(min-width: 787px) and (max-width: 1200px) {
+  body {background: crimson;}
+  
+  #normal h1 {display: block;}
+}
+/* Widescreen */
+@media(min-width: 1201px) {
+  body {background: seagreen;}
+  
+  #widescreen h1 {display: block;}
+}
+/* Landscape */
+@media(max-height: 500px) {
+  body {background: green;}
+  
+  #landscape h1 {display: block;}
+}
